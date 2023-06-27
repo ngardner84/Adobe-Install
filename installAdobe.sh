@@ -78,3 +78,6 @@ main () {
     #echo "Installing Adobe Creative Cloud"
     #installer -pkg /Volumes/Adobe\ Creative\ Cloud/Adobe\ Creative\ Cloud.pkg -target /
 }
+
+main
+exit
