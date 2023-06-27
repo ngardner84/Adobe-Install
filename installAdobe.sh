@@ -11,14 +11,14 @@ dialogMenu () {
 
 AppleSiliconInstallers () {
     echo "Downloading Adobe Creative Cloud(Silicon)"
-    curl -# -o /tmp/AdobeCreativeCloud.dmg https://ccmdl.adobe.com/AdobeProducts/KCCC/CCD/5_10_0/macarm64/ACCCx5_10_0_573.dmg
+    curl -# https://ccmdl.adobe.com/AdobeProducts/KCCC/CCD/5_10_0/macarm64/ACCCx5_10_0_573.dmg > /tmp/AdobeCreativeCloud.dmg
     echo ""
     echo ""
 }
 
 IntelInstallers () {
     echo "Downloading Adobe Creative Cloud(Intel)"
-    curl -# -o /tmp/AdobeCreativeCloud.dmg https://ccmdl.adobe.com/AdobeProducts/KCCC/CCD/5_10_0/osx10/ACCCx5_10_0_573.dmg
+    curl -# https://ccmdl.adobe.com/AdobeProducts/KCCC/CCD/5_10_0/osx10/ACCCx5_10_0_573.dmg > /tmp/AdobeCreativeCloud.dmg
 }
 
 progressBar () {
