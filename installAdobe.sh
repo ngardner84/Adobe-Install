@@ -11,14 +11,14 @@ dialogMenu () {
 
 AppleSiliconInstallers () {
     echo "Downloading Adobe Creative Cloud(Silicon)"
-    curl -# https://ccmdl.adobe.com/AdobeProducts/KCCC/CCD/5_10_0/macarm64/ACCCx5_10_0_573.dmg > Downloads/AdobeCreativeCloud.dmg
+    curl -# https://ccmdl.adobe.com/AdobeProducts/KCCC/CCD/5_10_0/macarm64/ACCCx5_10_0_573.dmg > ~/Downloads/AdobeCreativeCloud.dmg
     echo ""
     echo ""
 }
 
 IntelInstallers () {
     echo "Downloading Adobe Creative Cloud(Intel)"
-    curl -# https://ccmdl.adobe.com/AdobeProducts/KCCC/CCD/5_10_0/osx10/ACCCx5_10_0_573.dmg > Downloads/AdobeCreativeCloud.dmg
+    curl -# https://ccmdl.adobe.com/AdobeProducts/KCCC/CCD/5_10_0/osx10/ACCCx5_10_0_573.dmg > ~/Downloads/AdobeCreativeCloud.dmg
 }
 
 progressBar () {
@@ -73,11 +73,10 @@ main () {
         IntelInstallers
     fi
     echo "Install done"
-    #echo "Mounting Adobe Creative Cloud"
-    #hdiutil attach /tmp/AdobeCreativeCloud.dmg
-    #echo "Installing Adobe Creative Cloud"
-    #installer -pkg /Volumes/Adobe\ Creative\ Cloud/Adobe\ Creative\ Cloud.pkg -target /
+    echo "Mounting Adobe Creative Cloud"
+    hdiutil attach ~/Downloads/AdobeCreativeCloud.dmg
+    echo "Installing Adobe Creative Cloud"
+    installer -pkg /Volumes/Adobe\ Creative\ Cloud/Adobe\ Creative\ Cloud.pkg -target /
 }
 
 main
-exit
