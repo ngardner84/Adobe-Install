@@ -77,13 +77,13 @@ main () {
     hdiutil attach ~/Downloads/AdobeCreativeCloud.dmg
     echo "Installing Adobe Creative Cloud"
     sudo cp -R /Volumes/Creative\ Cloud/Install.app /Applications
-    #echo "Unmounting Adobe Creative Cloud"
-    #hdiutil detach /Volumes/Creative\ Cloud
-    #echo "Removing Adobe Creative Cloud"
-    #rm ~/Downloads/AdobeCreativeCloud.dmg
-    #echo "Adobe Creative Cloud Installed"
-    #echo "Opening Adobe Creative Cloud"
-    #open /Applications/Utilities/Adobe\ Creative\ Cloud/ACC/Creative\ Cloud.app
+    echo "Unmounting Adobe Creative Cloud"
+    hdiutil detach /Volumes/Creative\ Cloud
+    echo "Removing Adobe Creative Cloud"
+    rm ~/Downloads/AdobeCreativeCloud.dmg
+    echo "Adobe Creative Cloud Installed"
+    echo "Opening Adobe Creative Cloud"
+    open /Applications/Install.app
 }
 
 main
