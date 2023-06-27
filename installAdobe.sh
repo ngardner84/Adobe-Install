@@ -73,10 +73,17 @@ main () {
         IntelInstallers
     fi
     echo "Install done"
-    #echo "Mounting Adobe Creative Cloud"
-    #hdiutil attach ~/Downloads/AdobeCreativeCloud.dmg
-    #echo "Installing Adobe Creative Cloud"
-    #installer -pkg /Volumes/Adobe\ Creative\ Cloud/Adobe\ Creative\ Cloud.pkg -target /
+    echo "Mounting Adobe Creative Cloud"
+    hdiutil attach ~/Downloads/AdobeCreativeCloud.dmg
+    echo "Installing Adobe Creative Cloud"
+    sudo cp -R /Volumes/Creative\ Cloud/Install.app /Applications
+    echo "Unmounting Adobe Creative Cloud"
+    hdiutil detach /Volumes/Creative\ Cloud
+    echo "Removing Adobe Creative Cloud"
+    rm ~/Downloads/AdobeCreativeCloud.dmg
+    echo "Adobe Creative Cloud Installed"
+    echo "Opening Adobe Creative Cloud"
+    open /Applications/Utilities/Adobe\ Creative\ Cloud/ACC/Creative\ Cloud.app
 }
 
 main
