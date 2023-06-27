@@ -73,10 +73,10 @@ main () {
         IntelInstallers
     fi
     echo "Install done"
-    echo "Mounting Adobe Creative Cloud"
-    hdiutil attach ~/Downloads/AdobeCreativeCloud.dmg
-    echo "Installing Adobe Creative Cloud"
-    installer -pkg /Volumes/Adobe\ Creative\ Cloud/Adobe\ Creative\ Cloud.pkg -target /
+    #echo "Mounting Adobe Creative Cloud"
+    #hdiutil attach ~/Downloads/AdobeCreativeCloud.dmg
+    #echo "Installing Adobe Creative Cloud"
+    #installer -pkg /Volumes/Adobe\ Creative\ Cloud/Adobe\ Creative\ Cloud.pkg -target /
 }
 
 main
